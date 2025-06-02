@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+  <head>
+<title>Katana - Task Force X</title>
+<style>
+  body {
+    background: linear-gradient(to bottom, rgb(75, 74, 74), rgb(82, 1, 1));
+    color: white;
+    font-family: 'Metal Mania' , serif;
+  }
+@keyframes textSlash{
+  0% {letter-spacing: 0px;}
+  50%  {letter-spacing: 3px;}
+  100% {letter-spacing: 0;}
+}
+
+h1:hover {
+   animation: textSlash 0.3s ease-in-out;
+   color:red;
+}
+
+.bio ul li:hover{
+  color:red;
+  text-shadow: 0 0 10px darkred;
+  transition: 0.3s ease-in-out;
+}
+
+.character-profile img:hover {
+  filter: brightness(1.3) drop-shadow(0 0 15px red);
+  transition: 0.3s ease-in-out;
+}
+
+.character-profile img{
+  max-width: 300px;
+  display: block;
+  margin:0 auto;
+}
+footer{
+  position:relative;
+  bottom: 0;
+  padding: 15px;
+}
+footer a {
+    transform: rotate(-5deg);
+    background: linear-gradient(to right, grey, darkred);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+footer a:hover {
+    transform: rotate(5deg) scale(1.1);
+    box-shadow: 0 0 15px darkred;
+    transition: 0.3s ease-in-out;
+}
+</style>
+  </head>
+  <body>
+    <header>
+      <h1>Katana(Tatsu Yamashiro)</h1>
+      <p>"Criminals deserve no merycy."</p>
+    </header>
+    <section class="character-profile">
+      <img src="images/katana profile.jpg" alt="Katana">
+      <div class="bio">
+        <h2>Backstory</h2>
+        <p>Katana is a highly skilled samurai assasisin who wields the mystical Soultaker sword, which traps the souls if those it kills-including her deceased husband, Maseo Yamashiro. Unlike thpe other squad members, she is not a criminal-she voluntarily joins Task Force X as Rick's bodygaurd.
+        
+        Her tragic past involves her husband's murder at the hands of his own brother Takeo Yamashiro, who was involved with the Yakuza. After defeating Takeo, Katana took possession of the Soultake sword, which allows her to communicate with her husband's trapped soul
+        </p>
+
+        <h2>Abilities and Combat Skills</h2>
+        <ul>
+          <li>Master Swordswoman: Unmatched skills with a katana.</li>
+          <li>Peak Human Condition: Enhancedd agility, reflexes and endurance.</li>
+          <li>Expert matial artist: Traine various combat styles</li>
+        </ul>
+         <h2>Weapons and Gear</h2>
+        <ul>
+          <li>Soultaker Sowrd: A mystical blade that absorbs souls.</li>
+          <li>Traditional Samurai armor</li>
+          
+        </ul>
+        <h2>Memorable Quotes</h2>
+        <ul>
+        <li>"I weep when I thin of him."</li>
+        <li>"I am not...hiding"</li>
+        <li>"I am not a theif."</li>
+        </ul>
+      </div>
+
+    </section>
+    <footer>
+      <a href="home.html">Back to Squad</a>
+    </footer>
+  </body>
+</html>
