@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+<title>Enchantress</title>
+<style>
+  body{
+     background:linear-gradient(to bottom, black, rgb(73, 2, 73)) ;
+     color:white ;
+     font-family: 'Cinzel Decorative', serif;
+  }
+  @keyframes spellGlow {
+    0% { text-shadow: 0 0 5px green, 0 0 10px lime; }
+    50% { text-shadow: 0 0 15px lime, 0 0 20px green; }
+    100% { text-shadow: 0 0 5px green, 0 0 10px lime; }
+}
+h1 {
+    animation: spellGlow 2s infinite alternate;
+}
+header p{
+        color:lightgreen;
+        font-style: italic;
+        font-size: 18px;
+        text-align: center;
+}
+.character-profile img{
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  border: 3px solid darkgreen;
+}
+
+
+.character-profile img:hover{
+  filter: brightness(1.2) drop-shadow(0 0 15px green);
+  transition: 0.3s ease-in-out;
+}
+
+.bio ul li:hover {
+  cursor: pointer;
+  color: lime;
+  text-shadow: 0 0 10px green;
+  transition: 0.3s ease-in-out;
+}
+@keyframes floatSymbols {
+    0% { transform: translateY(0px) rotate(0deg); opacity: 1; }
+    50% { transform: translateY(-15px) rotate(10deg); opacity: 0.7; }
+    100% { transform: translateY(0px) rotate(0deg); opacity: 1; }
+}
+
+.mystic-symbols {
+  position: absolute;
+  top:10%;
+  left: 40%;
+  font-size: 40px;
+  color: limegreen;
+  opacity: 0.8;
+  animation: floatSymbols 3s infinite ease-in-out;
+  z-index: 1000;
+}
+footer{
+  position:relative;
+  bottom: 0;
+  padding: 15px;
+}
+footer a {
+    transform: rotate(-5deg);
+    background: linear-gradient(to right, black, rgb(87, 1, 87));
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+footer a:hover {
+    transform: rotate(5deg) scale(1.1);
+    box-shadow: 0 0 15px rgb(88, 1, 88);
+    transition: 0.3s ease-in-out;
+}
+</style>
+  </head>
+  <body>
+        <div class="mystic-symbols" style="top: 70%; left: 55%;">⍟</div>
+        <div class="mystic-symbols" style="top: 10%; left: 45%;">☾</div>
+    <header>
+      <h1>Enchantress (June Moone)</h1>
+      <p>"I am more than a dream, June. I am your destiny and you are mine."</p>
+    </header>
+   <section class="character-profile">
+    <img src="images/enchantress profile.jpg" alt="Enchantress">
+</section>
+
+      <div class="bio">
+        <h2>Backstory</h2>
+        <p>Enchantress is an ancient, interdimensional with who possesses the body of June Moone, an archaeologist who accidentally freed her from imprisonment. Initially controlled by Amanda Walker, Enchantress later rebels, freeing her brother Incubus and attempting to take over Erth with their combined mystical powers
+
+          When June Moone unleashed her, she became a split personality, with June struggling to suppress the witch's influence. 
+        </p>
+
+        <h2>Abilities and Combat Skills</h2>
+        <ul>
+          <li>Mind Control: Influences others to do her bidding.</li>
+          <li>Sorcery & Dark Magic: Can manipulate energy and reality.</li>
+          <li>Teleportation & Transformation: Can shift forms instantly.</li>
+          <li>Superhuman Strength and Durability</li>
+        </ul>
+         <h2>Weapons and Gear</h2>
+        <ul>
+          <li>Mystical Energy Blasts: Can destroy enemies with raw magic.</li>
+          <li>Ancient Rituals: Uses spells to summon creatures and manipulate reality</li>
+          <li>Firearms: Proficient in using pistols and machine guns.</li>
+        </ul>
+        <h2>Memorable Quotes</h2>
+        <ul>
+        <li>"Bow before me, mortals!"</li>
+        <li>"Yes, child. You need only to bow and serve beneath my feet."</li>
+        <li>"The humans turned against us"</li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <a href="home.html">Back to Squad</a>
+    </footer>
+  </body>
+</html>

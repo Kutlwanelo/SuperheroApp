@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <head>
+<title>Killer Croc - Task Force X</title>
+
+<style>
+  body{
+    background: linear-gradient(to bottom, darkgreen, black);
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  h1,h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px 5px darkgreen;
+  }
+  @keyframes lurkingText {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(3px); }
+    100% { transform: translateX(0); }
+}
+
+h1 {
+    animation: lurkingText 2s infinite alternate;
+}
+
+  .character-profile img{
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+    border: 3px solid darkgreen;
+    filter: contrast(1.1);
+  }
+
+  .character-profile img:hover{
+    animation: rippleEffect 1.5s infinite alternate;
+  }
+  @keyframes rippleEffect {
+    0% { transform: scale(1); filter: blur(0px); }
+    50% { transform: scale(1.05); filter: blur(1px); }
+    100% { transform: scale(1); filter: blur(0px); }
+}
+footer{
+  position:relative;
+  bottom: 0;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+footer a {
+    background: linear-gradient(to right, black, green);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+footer a:hover {
+    box-shadow: 0 0 15px green;
+    transition: 0.3s ease-in-out;
+}
+</style>
+  </head>
+  <body>
+    <header>
+      <h1>Killer Croc (Waylon Jones)</h1>
+      <p>"Not me shorty. I'm beautiful!"</p>
+    </header>
+    <section class="character-profile">
+      <img src="images/kiler croc profile.jpg" alt="Killer Croc">
+      <div class="bio">
+        <h2>Backstory</h2>
+        <p>Born with a rare condition that made his skin tough and repitilian, Killer Croc became a feared monster in Gotham. His raw physical power makes him one of the most dangerous members of the squad</p>
+
+        <h2>Abilities and Combat Skills</h2>
+        <ul>
+          <li>Superhuman strength & durability.</li>
+          <li>Enhanced senses like an apex predator.</li>
+          <li>Underwater combat & survival</li>
+        </ul>
+         <h2>Weapons and Gear</h2>
+        <ul>
+          <li>Brute force is his main weapon!</li>
+          <li>Sharp claws & teeth for deadly attacks..</li>
+        </ul>
+        <h2>Memorable Quotes</h2>
+        <ul>
+        <li>"I live underground. Y'all just tourists."</li>
+        <li>"I don't want your crazy."</li>
+        <li>"Ain't you scared?"</li>
+        </ul>
+      </div>
+
+    </section>
+    <footer>
+      <a href="home.html">Back to Squad</a>
+    </footer>
+  </body>
+</html>

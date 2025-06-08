@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <head>
+<title>El Diablo - Task Force X</title>
+
+    
+      <style>
+        body{
+          background: linear-gradient(to bottom, black,darkred);
+          color:white;
+        }
+        .character-profile img{
+          display: block;
+          max-width: 300px;
+          margin: 0 auto;
+          border: 3px solid #FF3131;
+          box-shadow: 0 0 15px rgba(255, 49, 49, 0.8);
+        }
+        .character-profile img:hover{
+          filter: brightness(1.2) drop-shadow(0 0 20px orange);
+          transition: 0.3s ease-in-out;
+        }
+        @keyframes fireFlicker {
+          0% { text-shadow: 0 0 5px orange, 0 0 10px red; }
+          50% { text-shadow: 0 0 15px red, 0 0 20px orange; }
+          100% { text-shadow: 0 0 5px orange, 0 0 10px red; }
+        }
+
+       h1 {
+         animation: fireFlicker 1.5s infinite alternate;
+       }
+       h2 {
+        color: white;
+        font-weight: bold;
+        text-shadow: 2px 2px 5px red;
+       }
+       header p{
+        color:white;
+        font-style: italic;
+        font-size: 18px;
+        text-align: center;
+       }
+       .bio ul li {
+        border: 2px solid orange;
+        padding: 5px;
+        background-color: rgba(255, 69, 0, 0.2);
+        transition: 0.3s;
+       }
+       .bio ul li:hover{
+        border-color: red;
+        background-color: rgba(255, 69, 0, 0.5);
+       }
+       footer{
+  position:relative;
+  bottom: 0;
+  padding: 15px;
+}
+footer a {
+    background: linear-gradient(to right, orange, darkred);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+footer a:hover {
+    box-shadow: 0 0 15px orange;
+    transition: 0.3s ease-in-out;
+}
+      </style>
+    </head>
+      <body>
+        <header>
+      <h1>El Diablo (Chato Santana)</h1>
+      <p>"Ain't nothing to worry about me. I'm cool homie."</p>
+        </header>
+    <section class="character-profile">
+      <img src="images/el diablo profile.jpg" alt="El Diablo">
+      <div class="bio">
+        <h2>Backstory</h2>
+        <p>A former gangster with fire-based superpowers, Chato Santana took a vow to never use his abilities again after accidently destroying his own family. In the squad he struggles between redemption and the violent nature of his past</p>
+
+        <h2>Abilities and Combat Skills</h2>
+        <ul>
+          <li>Pyrokinesis : Can summon and control fire.</li>
+          <li>Fire Manipulation Control: Uses flames as deadly attacks.</li>
+          <li>Spiritual strength: Battles inner demons</li>
+        </ul>
+         <h2>Weapons and Gear</h2>
+        <ul>
+          <li>His own flames are his weapon.</li>
+          <li>Tatto markings infused with his supernatural power.</li>
+          <li>Firearms: Proficient in using pistols and machine guns.</li>
+          <li>Explosives: Occasionally uses grenades and other explosives</li>
+        </ul>
+        <h2>Memorable Quotes</h2>
+        <ul>
+        <li>"I already lost one family. I ain't gonna lose another."</li>
+        <li>"Now you're screwed."</li>
+        <li>"I was trying to get you there. Phil Jackson. We good, right?"</li>
+        </ul>
+      </div>
+
+    </section>
+    <footer>
+      <a href="home.html">Back to Squad</a>
+    </footer>
+  </body>
+</html>
