@@ -39,23 +39,16 @@ h1 {
   animation: neonPulse 4s infinite alternate;
 }
 
-
-
-
 .character-card img{
-  width: 160px;
+  width: 180px;
   height:auto;
-  object-fit: contain;
+  object-fit: cover;
   display:block;
 }
 
-@keyframes floating {
-0% {transform: translateY(0px);}
-50%{transform: translateY(-10px);}
-100%{transform: translateY(0px);}
-}
 .character-card{
   width: 160px;
+  height: 100%;
   margin: 0;
   padding: 0;
   aspect-ratio: 3 / 4;
@@ -65,20 +58,8 @@ h1 {
   text-align: center;
   display: flex;
   flex-direction: column;
-  animation: floating 3s infinite alternate ease-in-out;
 }
-.character-card p {
-  font-size: 1.2rem;
-  color: white; 
-  text-align: center;
-  margin-top: 5;
-  font-weight: bold;
-  position: relative;
-  z-index: 2; 
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
+
 
 .character-grid {
   display: grid;
